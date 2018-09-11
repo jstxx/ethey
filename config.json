@@ -1,0 +1,10 @@
+{
+	"port": 4201,
+	"mongoUser":"terminalMongoAdmin",
+	"mongoConnection":"cluster0-xy9ev.mongodb.net/test?retryWrites=true",
+	"mongoPassword":"aqsvPKOQDftKl3VF",
+	"mongoUser":"terminalMongoAdmin",
+	"corsHeaders": ["Link"],
+	"etherscanKey":"BPHFG6EU6P5QJSY7QDZE3H42GYSJGKE1P8",
+	"transactionProvider": "http://api.etherscan.io/api?module=account&action=txlist&address="
+}

@@ -1,0 +1,15 @@
+#For AWSCodeDeploy
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/api/
+hooks:
+  AfterInstall:
+    - location: scripts/npmInstall.sh
+      runas: root
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/npmStart.sh
+      runas: root
+      timeout: 90
