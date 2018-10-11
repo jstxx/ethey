@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:10-alpine
 
 MAINTAINER Justin Savory <j@jestics.com> <https://github.com/jstxx>
 
@@ -11,8 +11,8 @@ WORKDIR /app
 # copy to /app in container
 COPY . /app/
 
-# expose port 4201
-EXPOSE 4201
+# expose port 8080
+EXPOSE 8080
 
 # cmd to start service
 CMD ["npm", "start", "--no-daemon"]

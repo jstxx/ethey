@@ -1,5 +1,5 @@
 {
-	"port": 4201,
+	"port": 8080,
 	"mongoUser":"terminalMongoAdmin",
 	"mongoConnection":"cluster0-xy9ev.mongodb.net/test?retryWrites=true",
 	"mongoPassword":"aqsvPKOQDftKl3VF",

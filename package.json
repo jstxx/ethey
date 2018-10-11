@@ -4,7 +4,9 @@
   "description": "Ethereum ES6 REST API",
   "main": "dist",
   "scripts": {
-    "start": "babel-node index.js --presets es2015,stage-2"
+    "start": "node --experimental-modules index.mjs",
+    "build": "babel . -d dist --presets es2015,stage-2",
+    "serve": "node dist/index.js"
   },
   "repository": "jstxx/Ethey",
   "author": "Justin <j@jestics.com>",
@@ -13,6 +15,7 @@
     "babel-runtime": "^6.26.0",
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
+    "cors": "^2.8.4",
     "express": "^4.13.3",
     "mongodb": "^3.1.4",
     "morgan": "^1.8.0",
@@ -20,13 +23,18 @@
     "resource-router-middleware": "^0.6.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/register": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
     "eslint": "^3.1.1",
     "nodemon": "^1.9.2"
   }
